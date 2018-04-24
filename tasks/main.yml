@@ -1,0 +1,10 @@
+---
+# tasks file for ansible-role-setupwindows
+
+- name: Use Chocolatey to install packages
+  win_chocolatey:
+    name: '{{ item }}'
+    state: present
+  with_items:
+  - googlechrome
+  - vscode
