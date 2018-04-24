@@ -7,4 +7,4 @@
     state: present
   with_items:
   - googlechrome
-  - vscode
+  - visualstudiocode
